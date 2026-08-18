@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>You're Invited — Sidang Skripsi</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --navy: #17233c;
+    --navy2: #253653;
+    --cream: #f8f5ee;
+    --paper: #fffdf8;
+    --gold: #c9a96e;
+    --gold-light: #e9d9b5;
+    --ink: #263249;
+    --muted: #7d8491;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at 8% 8%,
+            rgba(201,169,110,.18),
+            transparent 24%
+        ),
+        radial-gradient(
+            circle at 92% 90%,
+            rgba(23,35,60,.12),
+            transparent 27%
+        ),
+        var(--cream);
+
+    color: var(--ink);
+    font-family: "DM Sans", sans-serif;
+    padding: 18px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.page {
+    width: 100%;
+    max-width: 760px;
+    margin: auto;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255,253,248,.96);
+
+    border: 1px solid rgba(201,169,110,.42);
+
+    border-radius: 34px;
+
+    box-shadow:
+        0 30px 90px rgba(23,35,60,.13);
+}
+
+
+/* =========================================================
+   DECORATION
+========================================================= */
+
+.card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    border:
+        1px solid
+        rgba(201,169,110,.28);
+
+    border-radius: 50%;
+
+    left: -175px;
+    top: 310px;
+}
+
+
+.card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 340px;
+    height: 340px;
+
+    border:
+        1px solid
+        rgba(201,169,110,.25);
+
+    border-radius: 50%;
+
+    right: -230px;
+    bottom: 160px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    position: relative;
+
+    min-height: 430px;
+
+    padding:
+        52px
+        28px
+        60px;
+
+    color: white;
+
+    text-align: center;
+
+    background:
+
+        radial-gradient(
+            circle at 18% 20%,
+            rgba(201,169,110,.16),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 85% 78%,
+            rgba(255,255,255,.07),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            var(--navy),
+            var(--navy2)
+        );
+
+    overflow: hidden;
+}
+
+
+.hero::before,
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    border:
+        1px solid
+        rgba(233,217,181,.38);
+
+    border-radius: 50%;
+}
+
+
+.hero::before {
+
+    width: 360px;
+    height: 360px;
+
+    left: -215px;
+    top: -220px;
+}
+
+
+.hero::after {
+
+    width: 430px;
+    height: 430px;
+
+    right: -270px;
+    bottom: -300px;
+}
+
+
+/* =========================================================
+   SPARKLES
+========================================================= */
+
+.spark {
+
+    position: absolute;
+
+    color: var(--gold-light);
+
+    font-size: 18px;
+
+    opacity: .8;
+}
+
+.s1 {
+    left: 13%;
+    top: 24%;
+}
+
+.s2 {
+    right: 14%;
+    top: 31%;
+    font-size: 12px;
+}
+
+.s3 {
+    left: 19%;
+    bottom: 19%;
+    font-size: 11px;
+}
+
+.s4 {
+    right: 18%;
+    bottom: 17%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.eyebrow {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: var(--gold-light);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.eyebrow::before,
+.eyebrow::after {
+
+    content: "";
+
+    width: 42px;
+    height: 1px;
+
+    background:
+        var(--gold);
+}
+
+
+/* =========================================================
+   TOGA ICON
+========================================================= */
+
+.toga {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 62px;
+    height: 48px;
+
+    margin:
+        30px
+        auto
+        18px;
+}
+
+
+.toga .cap {
+
+    width: 0;
+    height: 0;
+
+    border-left:
+        31px solid transparent;
+
+    border-right:
+        31px solid transparent;
+
+    border-bottom:
+        25px solid
+        var(--gold-light);
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+}
+
+
+.toga .base {
+
+    width: 45px;
+    height: 22px;
+
+    background:
+        var(--gold-light);
+
+    position: absolute;
+
+    left: 8px;
+    top: 22px;
+
+    border-radius:
+        0 0 20px 20px;
+}
+
+
+.toga .string {
+
+    position: absolute;
+
+    width: 2px;
+    height: 30px;
+
+    background:
+        var(--gold);
+
+    right: 4px;
+    top: 18px;
+
+    transform:
+        rotate(-20deg);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+h1 {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(
+            56px,
+            11vw,
+            88px
+        );
+
+    line-height: .82;
+
+    font-weight: 700;
+
+    letter-spacing: -2px;
+}
+
+
+.hero .sub {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 520px;
+
+    margin:
+        22px auto 0;
+
+    color: #e7ebf2;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.content {
+
+    position: relative;
+
+    z-index: 3;
+
+    padding:
+        38px
+        28px
+        34px;
+}
+
+
+.invite-text {
+
+    max-width: 550px;
+
+    margin:
+        0 auto 30px;
+
+    text-align: center;
+
+    color:
+        var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.85;
+}
+
+
+.invite-text em {
+
+    color:
+        var(--navy);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 23px;
+}
+
+
+/* =========================================================
+   NAMA
+========================================================= */
+
+.name {
+
+    text-align: center;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(
+            38px,
+            8vw,
+            58px
+        );
+
+    line-height: 1;
+
+    color:
+        var(--navy);
+}
+
+
+.prodi {
+
+    text-align: center;
+
+    margin-top: 8px;
+
+    color:
+        var(--muted);
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.gold-line {
+
+    width: 80px;
+    height: 1px;
+
+    background:
+        var(--gold);
+
+    margin:
+        24px auto;
+}
+
+
+/* =========================================================
+   DETAIL
+========================================================= */
+
+.details {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 12px;
+
+    max-width: 650px;
+
+    margin:
+        0 auto 26px;
+}
+
+
+.detail {
+
+    background:
+        var(--paper);
+
+    border:
+        1px solid
+        #ebe3d2;
+
+    border-radius: 22px;
+
+    padding: 20px 12px;
+
+    text-align: center;
+}
+
+
+.icon {
+
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin:
+        0 auto 12px;
+
+    border-radius: 50%;
+
+    background:
+        #f3ead8;
+
+    font-size: 18px;
+}
+
+
+.label {
+
+    display: block;
+
+    color:
+        var(--muted);
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 6px;
+}
+
+
+.value {
+
+    display: block;
+
+    color:
+        var(--navy);
+
+    font-size: 13px;
+
+    line-height: 1.45;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   JUDUL SKRIPSI
+========================================================= */
+
+.thesis {
+
+    max-width: 650px;
+
+    margin:
+        0 auto 25px;
+
+    padding:
+        24px 22px;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fcf9f1,
+            #f5efe2
+        );
+
+    border:
+        1px solid
+        #e2d4b7;
+
+    text-align: center;
+}
+
+
+.thesis small {
+
+    color:
+        var(--gold);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.thesis p {
+
+    margin-top: 10px;
+
+    color:
+        var(--navy);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 22px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   LOKASI
+========================================================= */
+
+.venue {
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    padding: 22px;
+
+    border-radius: 24px;
+
+    background: white;
+
+    border:
+        1px solid
+        #ece8df;
+
+    text-align: center;
+}
+
+
+.venue .pin {
+
+    font-size: 25px;
+}
+
+
+.venue h3 {
+
+    margin-top: 7px;
+
+    color:
+        var(--navy);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 27px;
+}
+
+
+.venue p {
+
+    margin-top: 5px;
+
+    color:
+        var(--muted);
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+
+.btn {
+
+    min-width: 185px;
+
+    padding:
+        13px 18px;
+
+    border-radius: 999px;
+
+    border: 0;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        .2s ease;
+}
+
+
+.btn:hover {
+
+    transform:
+        translateY(-2px);
+}
+
+
+.primary {
+
+    background:
+        var(--navy);
+
+    color: white;
+
+    box-shadow:
+        0 8px 22px
+        rgba(23,35,60,.16);
+}
+
+
+.secondary {
+
+    background:
+        #f3ecdf;
+
+    color:
+        var(--navy);
+
+    border:
+        1px solid
+        #e2d3b5;
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.note {
+
+    margin:
+        27px auto 0;
+
+    text-align: center;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 21px;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+
+    padding:
+        22px;
+
+    text-align: center;
+
+    border-top:
+        1px solid
+        #eee8dc;
+
+    color:
+        var(--muted);
+
+    font-size: 11px;
+}
+
+
+.footer strong {
+
+    color:
+        var(--navy);
+}
+
+
+/* =========================================================
+   RESPONSIVE HP
+========================================================= */
+
+@media(max-width:620px) {
+
+    body {
+        padding: 8px;
+    }
+
+    .card {
+        border-radius: 25px;
+    }
+
+    .hero {
+
+        min-height: 390px;
+
+        padding:
+            45px
+            20px
+            55px;
+    }
+
+    .content {
+
+        padding:
+            30px
+            16px;
+    }
+
+    .details {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .detail {
+
+        display: grid;
+
+        grid-template-columns:
+            45px 1fr;
+
+        align-items: center;
+
+        text-align: left;
+
+        gap: 8px;
+
+        padding:
+            15px 16px;
+    }
+
+    .icon {
+        margin: 0;
+    }
+
+    .label,
+    .value {
+        display: block;
+    }
+
+    .value {
+        margin-top: 2px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+<div class="card">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<header class="hero">
+
+    <span class="spark s1">✦</span>
+    <span class="spark s2">✧</span>
+    <span class="spark s3">✦</span>
+    <span class="spark s4">✧</span>
+
+
+    <div class="eyebrow">
+        You're Invited
+    </div>
+
+
+    <div class="toga">
+
+        <div class="cap"></div>
+
+        <div class="base"></div>
+
+        <div class="string"></div>
+
+    </div>
+
+
+    <h1>
+        Sidang
+        <br>
+        Skripsi
+    </h1>
+
+
+    <p class="sub">
+
+        one last step before the title ♡
+
+        <br>
+
+        Kehadiran dan dukungan kamu
+        akan sangat berarti.
+
+    </p>
+
+</header>
+
+
+
+<!-- =====================================================
+     CONTENT
+===================================================== -->
+
+<section class="content">
+
+
+    <p class="invite-text">
+
+        Dengan penuh rasa syukur,
+        saya mengundang teman-teman
+        untuk hadir di momen spesial ini.
+
+        <br>
+
+        <em>
+            Let's celebrate this little milestone together.
+        </em>
+
+    </p>
+
+
+
+    <!-- =================================================
+         GANTI NAMA DI SINI
+    ================================================= -->
+
+    <h2 class="name">
+
+        Nama Kamu
+
+    </h2>
+
+
+    <!-- GANTI PROGRAM STUDI -->
+
+    <p class="prodi">
+
+        Teknik Informatika · Universitas Trilogi
+
+    </p>
+
+
+
+    <div class="gold-line"></div>
+
+
+
+    <!-- =================================================
+         DETAIL SIDANG
+    ================================================= -->
+
+    <div class="details">
+
+
+        <!-- TANGGAL -->
+
+        <div class="detail">
+
+            <div class="icon">
+                ♡
+            </div>
+
+            <div>
+
+                <span class="label">
+                    Hari / Tanggal
+                </span>
+
+                <span class="value">
+                    Sabtu, 22 Agustus 2026
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- WAKTU -->
+
+        <div class="detail">
+
+            <div class="icon">
+                ◷
+            </div>
+
+            <div>
+
+                <span class="label">
+                    Waktu
+                </span>
+
+                <span class="value">
+                    13.00 – 14.00 WIB
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- TEMPAT -->
+
+        <div class="detail">
+
+            <div class="icon">
+                ⌖
+            </div>
+
+            <div>
+
+                <span class="label">
+                    Tempat
+                </span>
+
+                <span class="value">
+                    R. Lab Komputasi Lt. 1
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         JUDUL SKRIPSI
+    ================================================= -->
+
+    <div class="thesis">
+
+        <small>
+            JUDUL SKRIPSI
+        </small>
+
+
+        <!-- GANTI JUDUL SKRIPSI -->
+
+        <p>
+
+            Judul skripsi kamu
+            ditulis di sini
+
+        </p>
+
+    </div>
+
+
+
+    <!-- =================================================
+         LOKASI
+    ================================================= -->
+
+    <div class="venue">
+
+
+        <div class="pin">
+            ⌖
+        </div>
+
+
+        <h3>
+            R. Lab Komputasi Lt. 1
+        </h3>
+
+
+        <p>
+            Universitas Trilogi
+        </p>
+
+
+
+        <div class="buttons">
+
+
+            <!-- LINK GOOGLE MAPS KAMU -->
+
+            <a
+                class="btn primary"
+                href="https://maps.app.goo.gl/CmG5RUAcLYSFWRj8A"
+                target="_blank"
+                rel="noopener"
+            >
+
+                Buka Google Maps ↗
+
+            </a>
+
+
+
+            <button
+                class="btn secondary"
+                onclick="addToCalendar()"
+            >
+
+                Simpan ke Kalender ♡
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <p class="note">
+
+        “See you there,
+        and wish me luck! ♡”
+
+    </p>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    Made with
+
+    <strong>
+        love, coffee & a little panic
+    </strong>
+
+    ☕
+
+</footer>
+
+
+</div>
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+     SIMPAN KE KALENDER
+===================================================== -->
+
+<script>
+
+function addToCalendar() {
+
+
+    const ics =
+
+`BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Undangan Sidang Skripsi//ID
+BEGIN:VEVENT
+UID:${Date.now()}@undanganskripsi
+DTSTAMP:20260819T000000Z
+DTSTART;TZID=Asia/Jakarta:20260822T130000
+DTEND;TZID=Asia/Jakarta:20260822T140000
+SUMMARY:Sidang Skripsi - Nama Kamu
+LOCATION:R. Lab Komputasi Lt. 1, Universitas Trilogi
+DESCRIPTION:Undangan Sidang Skripsi
+END:VEVENT
+END:VCALENDAR`;
+
+
+    const blob = new Blob(
+        [ics],
+        {
+            type:
+            "text/calendar;charset=utf-8"
+        }
+    );
+
+
+    const url =
+        URL.createObjectURL(blob);
+
+
+    const a =
+        document.createElement("a");
+
+
+    a.href = url;
+
+
+    a.download =
+        "sidang-skripsi-22-agustus-2026.ics";
+
+
+    document.body.appendChild(a);
+
+
+    a.click();
+
+
+    document.body.removeChild(a);
+
+
+    URL.revokeObjectURL(url);
+
+}
+
+</script>
+
+
+</body>
+</html>
